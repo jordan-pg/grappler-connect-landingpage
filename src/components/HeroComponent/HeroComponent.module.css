@@ -1,0 +1,100 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  object-fit: cover;
+  height: 110% !important;
+}
+
+.overlay {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  padding: 15px;
+}
+
+.header {
+  font-family: var(--font-sofia), sans-serif;
+  color: #143642;
+  text-transform: uppercase;
+  font-size: 2.6em;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-family: var(--font-raleway), sans-serif;
+  color: #143642;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.fullWidthButton {
+  width: 100%;
+  background: radial-gradient(circle, #0F8B8D 0%, #143642 100%);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 16px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.inputField {
+  color: #6F727E;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+/* Subscribe */
+.subscribeHeader {
+  font-family: var(--font-sofia), sans-serif;
+  color: #143642;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.subscribeContainer {
+  position: relative;
+  width: 100vw;
+  height: 250px;
+  overflow: hidden;
+}
+
+.subscribeOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  width: max-content;
+}
+
+.alert {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,54 @@
+.testimonialsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px;
+  font-family: var(--font-raleway), sans-serif;
+}
+
+.testimonialCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quoteIcon {
+  font-size: 2rem;
+  color: #143642;
+}
+
+.quoteText {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profileImage {
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  color: #777;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+}

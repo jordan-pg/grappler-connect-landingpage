@@ -1,0 +1,30 @@
+.initialLogoOverlay {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1050;
+  pointer-events: none;
+}
+
+.navbarTransparent {
+  background: transparent;
+  transition: background .6s ease;
+}
+
+.navbarScrolled {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background .6s ease;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbartoggler {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border: none;
+}
