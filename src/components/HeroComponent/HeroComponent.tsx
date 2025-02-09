@@ -84,14 +84,14 @@ const HeroComponent = () => {
 			  <p>Hello,</p>
 			  <p>Thank you for joining the Grapplers Connect waitlist! We're thrilled to welcome you to a community where passion for grappling meets elite coaching.</p>
 			  <p>We're hard at work building a platform that will redefine how athletes and coaches connect—breaking down barriers and opening doors to training opportunities like never before.</p>
-			  <p>As an early supporter, you'll be the first to receive exclusive updates, sneak peeks, and invitations to our beta launch.</p>
+			  <p>As an early supporter, you'll be the first to receive exclusive updates, sneak peeks, and invitations to our beta launch. In the meantime, stay tuned and be sure to follow us on social media for behind-the-scenes insights and the latest news.</p>
+			  <p>Follow us on <a href="http://instagram.com/grapplersconnect/" target="_blank">Instagram</a> for more updates and exclusive content!</p>
 			  <p>We can't wait to have you on board as we shape the future of grappling together.</p>
 			  <p>Best regards,</p>
 			  <p>Jordan Griffin</p>
 			  <p>The Grapplers Connect Team</p>
 			`,
-		  };
-		  
+		};
 
 		try {
 			const emailResponse = await fetch(

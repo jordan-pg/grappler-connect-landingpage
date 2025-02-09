@@ -1,7 +1,15 @@
 "use client";
 import Image from "next/image";
 import styles from "../HeroComponent/HeroComponent.module.css";
-import { Row, Form, Col, FloatingLabel, Button, Alert, Spinner } from "react-bootstrap";
+import {
+	Row,
+	Form,
+	Col,
+	FloatingLabel,
+	Button,
+	Alert,
+	Spinner,
+} from "react-bootstrap";
 import { useState } from "react";
 
 const Subscribe = () => {
@@ -54,13 +62,13 @@ const Subscribe = () => {
 				setSuccess("Successfully joined! Check your email.");
 				setEmail("");
 				setSelected("");
-				setLoading(false)
+				setLoading(false);
 			} else {
 				const data = await response.json();
 				setError(data.message || "Something went wrong. Try again.");
-				setLoading(false)
+				setLoading(false);
 			}
-		// eslint-disable-next-line @typescript-eslint/no-unused-vars
+			// eslint-disable-next-line @typescript-eslint/no-unused-vars
 		} catch (err) {
 			setError("Failed to connect. Please try again.");
 		}
@@ -76,24 +84,27 @@ const Subscribe = () => {
 			  <p>Hello,</p>
 			  <p>Thank you for joining the Grapplers Connect waitlist! We're thrilled to welcome you to a community where passion for grappling meets elite coaching.</p>
 			  <p>We're hard at work building a platform that will redefine how athletes and coaches connect—breaking down barriers and opening doors to training opportunities like never before.</p>
-			  <p>As an early supporter, you'll be the first to receive exclusive updates, sneak peeks, and invitations to our beta launch.</p>
+			  <p>As an early supporter, you'll be the first to receive exclusive updates, sneak peeks, and invitations to our beta launch. In the meantime, stay tuned and be sure to follow us on social media for behind-the-scenes insights and the latest news.</p>
+			  <p>Follow us on <a href="http://instagram.com/grapplersconnect/" target="_blank">Instagram</a> for more updates and exclusive content!</p>
 			  <p>We can't wait to have you on board as we shape the future of grappling together.</p>
 			  <p>Best regards,</p>
 			  <p>Jordan Griffin</p>
 			  <p>The Grapplers Connect Team</p>
 			`,
-		  };
-		  
+		};
 
 		try {
-			const emailResponse = await fetch("https://api.brevo.com/v3/smtp/email", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-					"api-key": BREVO_API_KEY as string,
-				},
-				body: JSON.stringify(emailData),
-			});
+			const emailResponse = await fetch(
+				"https://api.brevo.com/v3/smtp/email",
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+						"api-key": BREVO_API_KEY as string,
+					},
+					body: JSON.stringify(emailData),
+				}
+			);
 
 			if (!emailResponse.ok) {
 				const data = await emailResponse.json();
@@ -174,7 +185,7 @@ const Subscribe = () => {
 							type="submit"
 							disabled={loading}
 						>
-							{loading? <Spinner /> : 'Join to Get Early Access'}
+							{loading ? <Spinner /> : "Join to Get Early Access"}
 						</Button>
 					</Form>
 					{error && <Alert variant="danger">{error}</Alert>}

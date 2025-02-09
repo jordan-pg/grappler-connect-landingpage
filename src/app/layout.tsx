@@ -50,6 +50,7 @@ export default function RootLayout({
 				{/* Apple touch icons (optional, but recommended for iOS support) */}
 				<link rel="apple-touch-icon" sizes="192x192" href="/icons/192.png" />
 				<link rel="apple-touch-icon" sizes="512x512" href="/icons/512.png" />
+				<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
 				{/* Theme color for browsers */}
 				<meta name="theme-color" content="#000000" />
 				{/* The rest of your metadata is injected by Next.js */}
