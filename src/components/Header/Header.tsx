@@ -29,6 +29,7 @@ const Header = () => {
 						alt="Centered Logo"
 						width={260}
 						height={50}
+						unoptimized
 					/>
 				</div>
 			)}
@@ -49,6 +50,7 @@ const Header = () => {
 									alt="Navbar Logo"
 									width={180}
 									height={36}
+									unoptimized
 								/>
 							</Navbar.Brand>
 							<Navbar.Toggle

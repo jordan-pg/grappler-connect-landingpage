@@ -7,7 +7,7 @@ const HowItWorks = () => {
       <Container className={styles.content}>
         <h2 className={styles.heading}>How It Works</h2>
         <p className={styles.subtext}>
-          At Grappler Connect, we simplify the journey to elite training with a streamlined, intuitive process:
+          At Grapplers Connect, we simplify the journey to elite training with a streamlined, intuitive process:
         </p>
 
         <Row className={styles.row}>

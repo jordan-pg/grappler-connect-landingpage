@@ -30,6 +30,7 @@ const Testimonials = () => {
               width={40}
               height={40}
               className={styles.profileImage}
+              unoptimized
             />
             <div>
               <h4 className={styles.name}>{testimonial.name}</h4>

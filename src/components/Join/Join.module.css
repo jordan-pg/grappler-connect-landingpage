@@ -1,9 +1,9 @@
 /* Full-screen section without background */
 .joinSection {
-  height: 100vh;
+  min-height: 100vh;
+  height: max-content;
   display: flex;
   align-items: center;
-  padding: 4rem 0;
 }
 
 /* Container styling */

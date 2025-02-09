@@ -15,6 +15,7 @@ const Join = () => {
 							width={350}
 							height={700}
 							className={styles.phoneImage}
+							unoptimized
 						/>
 					</Col>
 

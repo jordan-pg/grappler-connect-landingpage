@@ -79,12 +79,19 @@ const HeroComponent = () => {
 		const emailData = {
 			sender: { name: "Grapplers Connect", email: BREVO_SENDER_EMAIL },
 			to: [{ email: recipientEmail }],
-			subject: "Welcome to Our Community!",
-			htmlContent: `<p>Hi,</p>
-				<p>We're excited to have you as part of our growing community! Get ready to connect with elite grapplers and coaches.</p>
-				<p>See you inside!</p>
-				<p>Best, Jordan from Grapplers Connect</p>`,
-		};
+			subject: "Welcome to Grapplers Connect: Your Journey Begins!",
+			htmlContent: `
+			  <p>Hello,</p>
+			  <p>Thank you for joining the Grapplers Connect waitlist! We're thrilled to welcome you to a community where passion for grappling meets elite coaching.</p>
+			  <p>We're hard at work building a platform that will redefine how athletes and coaches connect—breaking down barriers and opening doors to training opportunities like never before.</p>
+			  <p>As an early supporter, you'll be the first to receive exclusive updates, sneak peeks, and invitations to our beta launch.</p>
+			  <p>We can't wait to have you on board as we shape the future of grappling together.</p>
+			  <p>Best regards,</p>
+			  <p>Jordan Griffin</p>
+			  <p>The Grapplers Connect Team</p>
+			`,
+		  };
+		  
 
 		try {
 			const emailResponse = await fetch(
@@ -115,6 +122,7 @@ const HeroComponent = () => {
 				alt="Background"
 				fill
 				className={styles.background}
+				unoptimized
 			/>
 
 			<div className={styles.overlay}>
