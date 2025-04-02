@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "grapplers-connect"
-  }
+  },
+  "targets": {
+    "grapplers-connect": {
+      "hosting": {
+        "landing": [
+          "grapplers-connect"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
