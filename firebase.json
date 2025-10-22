@@ -1,7 +1,6 @@
 {
   "hosting": {
-    "target": "landing",
-    "public": "out",
+    "source": ".",
     "ignore": [
       "firebase.json",
       "**/.*",

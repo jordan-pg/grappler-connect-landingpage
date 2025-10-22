@@ -37,7 +37,7 @@
     "next-env.d.ts",
     "next/dist/build/types/**/*.ts",
     "./next/dist/build/types/**/*.ts"
-, "src/app/legal-documents/test.js"  ],
+, "src/app/legal-documents/test.js", "next.config.ts"  ],
   "exclude": [
     "node_modules"
   ]
